@@ -10,7 +10,13 @@ import {
   IonLabel,
   IonItem,
   IonButton,
-  IonIcon
+  IonIcon,
+  IonCardContent,
+  IonCard,
+  IonCardHeader,
+  IonCardTitle,
+  IonCardSubtitle
+
 } from '@ionic/react';
 
 import React from 'react';
@@ -23,16 +29,23 @@ const NewItem: React.FC = () => {
           <IonButtons slot="start">
             <IonBackButton />
           </IonButtons>
-          <IonTitle>New Item</IonTitle>
+          <IonTitle>New</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
-    <IonItem>
-      <IonInput placeholder="Your Idea"></IonInput>
-    </IonItem >
-      <IonButton  expand="block">
-        Save!
-      </IonButton>
+      <IonCard>
+      <IonCardHeader>
+          <IonCardTitle>Tell me your idea!</IonCardTitle>
+        </IonCardHeader>
+          <IonCardContent>
+            <IonItem>
+              <IonInput placeholder="Your Idea"></IonInput>
+            </IonItem >
+            <IonButton  expand="block">
+              Save!
+           </IonButton>
+        </IonCardContent>
+      </IonCard>
       </IonContent>
     </IonPage>
   );
