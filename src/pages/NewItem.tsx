@@ -5,7 +5,12 @@ import {
   IonHeader,
   IonPage,
   IonTitle,
-  IonToolbar
+  IonToolbar,
+  IonInput,
+  IonLabel,
+  IonItem,
+  IonButton,
+  IonIcon
 } from '@ionic/react';
 
 import React from 'react';
@@ -21,7 +26,14 @@ const NewItem: React.FC = () => {
           <IonTitle>New Item</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent></IonContent>
+      <IonContent>
+    <IonItem>
+      <IonInput placeholder="Your Idea"></IonInput>
+    </IonItem >
+      <IonButton  expand="block">
+        Save!
+      </IonButton>
+      </IonContent>
     </IonPage>
   );
 };
