@@ -21,7 +21,7 @@ import {
 
 import React from 'react';
 
-const NewItem: React.FC = () => {
+const NewMarker: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -50,4 +50,4 @@ const NewItem: React.FC = () => {
     </IonPage>
   );
 };
-export default NewItem;
+export default NewMarker;
